@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dhanunjaya-rao-kadimisetty.github.io/sitemap.xml
+Sitemap: https://dhanunjaya-rao-kadimisetty.github.io/Shri-Pratti-NarayanaRaoGaru-Website/sitemap.xml
