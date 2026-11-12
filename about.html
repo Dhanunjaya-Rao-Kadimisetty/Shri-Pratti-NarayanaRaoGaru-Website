@@ -33,6 +33,11 @@
   <!-- Favicon -->
   <link rel="icon" href="Images/Shri Pratti Narayana Rao logo photo.jpeg" type="image/jpeg" />
 
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TTZ0DYL4G"></script>
   <script>
@@ -91,139 +96,222 @@
 </head>
 
 <body>
-<header style="text-align: center; padding: 10px; background-color: #5B3A29;">
-  <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Shirdi SaiBaba</figcaption>
-    </figure>
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Pratti Narayana Rao Garu</figcaption>
-    </figure>
-  </div>
 
-  <h1 style="color: white; margin-top: 10px;">Biography of Sri Pratti Narayana Rao Garu</h1>
-  <nav>
-    <a href="./" style="color: white; margin: 0 10px;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 10px;">About</a>
-    <a href="gallery.html" style="color: white; margin: 0 10px;">Gallery</a>
-  </nav>
-</header>
-
-  <main>
-    <article class="biography">
-      <div class="photo-block">
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu" width="500" height="500"/>
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao Garu</u></em></strong></figcaption>
-        </figure>
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <div class="header-portrait-group">
+          <img class="header-portrait" src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" width="52" height="52" />
+          <img class="header-portrait" src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" width="52" height="52" />
+        </div>
+        <div class="header-title-wrap">
+          <span class="header-kicker">Historical Biography</span>
+          <h1 class="header-title">Biography of Sri Pratti Narayana Rao Garu</h1>
+        </div>
       </div>
 
-      <p>
-        Sri Pratti Narayana Rao stands immortalized in "Sai Literature" by translating the English version of the divine "Sri Sai Satcharitra" (the English version is a translation by Sri Gunaji from the original Marathi version of Sri Sai Satcharitra by Sri Hemadpanth) into Telugu. The first edition of this Telugu masterpiece by Late Shri Pratti Narayana Rao Garu got released in the year 1953.
-      </p>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
 
-      <h2>Early Life and Family Background</h2>
+      <nav class="header-nav">
+        <a href="./" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="site-main">
+
+    <!-- Biography Hero Overview -->
+    <section class="bio-hero-card">
+      <div class="bio-hero-flex">
+        <figure class="bio-hero-img-wrap">
+          <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu" width="220" height="280" />
+          <figcaption>Sri Pratti Narayana Rao Garu</figcaption>
+        </figure>
+
+        <div class="bio-hero-text">
+          <span class="hero-badge">Pioneer Translator & Sai Devotee</span>
+          <p style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 0;">
+            Sri Pratti Narayana Rao stands immortalized in "Sai Literature" by translating the English version of the divine "Sri Sai Satcharitra" (the English version is a translation by Sri Gunaji from the original Marathi version of Sri Sai Satcharitra by Sri Hemadpanth) into Telugu. The first edition of this Telugu masterpiece by Late Shri Pratti Narayana Rao Garu got released in the year 1953.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Early Life and Family Background -->
+    <section class="content-card timeline-section">
+      <div class="section-header-wrap">
+        <h2>Early Life and Family Background</h2>
+      </div>
+
       <p>
         Pratti Narayana Rao garu is a native of Vizianagaram. In those days, he was working as a teacher in a modern tutorial college.
       </p>
 
-      <div class="photo-row">
+      <div class="photo-row-grid">
         <figure>
           <img src="Images/Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card.jpg" alt="Historical wedding invitation card of Sri Pratti Narayana Rao and Smt Kameshwaramma" width="500" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card</u></em></strong></figcaption>
+          <figcaption>Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card</figcaption>
         </figure>
+
         <figure>
           <img src="Images/photo of the tutorial college where Shri Pratti Narayana Rao taught.jpg" alt="Photograph of the tutorial college in Vizianagaram where Sri Pratti Narayana Rao taught" loading="lazy" />
-          <figcaption><strong><em><u>Photo of the tutorial college where Shri Pratti Narayana Rao taught</u></em></strong></figcaption>
+          <figcaption>Photo of the tutorial college where Shri Pratti Narayana Rao taught</figcaption>
         </figure>
+
         <figure>
           <img src="Images/Younger Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu during his younger years" loading="lazy" />
-          <figcaption><strong><em><u>Younger Shri Pratti Narayana Rao Garu</u></em></strong></figcaption>
+          <figcaption>Younger Shri Pratti Narayana Rao Garu</figcaption>
         </figure>
+
         <figure>
           <img src="Images/Shri Pratti Narayana Rao's Eldest Daughter .jpg" alt="Photograph of Smt Chandramathi, eldest daughter of Sri Pratti Narayana Rao Garu" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao's Eldest Daughter Smt.Chandramathi</u></em></strong></figcaption>
+          <figcaption>Shri Pratti Narayana Rao's Eldest Daughter Smt.Chandramathi</figcaption>
         </figure> 
       </div>
 
       <p>
         Pratti Narayana Rao left home leaving behind his eldest daughter Smt. Chandramathy who was just 10 years old at that time. From the moment Pratti Narayana Rao left home, his wife Smt. Kameshwaramma became bedridden. Ever since then, Smt. Chandramathy took care of her ailing mother and her younger brothers Satyanarayana and Krishna Rao at their grandfather's house. Smt. Chandramathy also went to work to support the family and educate her younger siblings. Smt. Kameshwaramma, wife of Pratti Narayana Rao, passed away in 1967.
       </p>
+    </section>
 
-      <h2>Spiritual Journey and Devotion to Shirdi Sai Baba</h2>
-      <div class="photo-block">
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu in his later days" style="width: 250px; height: 250px; border-radius: 10px;" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti NarayanaRao Garu later Days</u></em></strong></figcaption>
-        </figure> 
-        <p>
-          During later days, it was found that Pratti Narayana Rao was in Shirdi which he made his permanent residence. Some excerpts of Sri Pratti Narayana Rao's stay at Shirdi were available from Sri Sivanesan Swamiji who had met him at Shirdi in the early 1950s. For a month and a half, both used to meet at Chavadi and discuss about Sri Sai Baba for long durations.
-        </p>
+    <!-- Section 2: Spiritual Journey and Devotion to Shirdi Sai Baba -->
+    <section class="content-card timeline-section">
+      <div class="section-header-wrap">
+        <h2>Spiritual Journey and Devotion to Shirdi Sai Baba</h2>
       </div>
 
-      <h2>Telugu Translation of Sri Sai Satcharitra</h2>
-      <p>
-        It was noted by Sri Sivanesan Swamiji that Sri Pratti Narayana Rao used to translate the divine Satcharitra by sitting in the holy womb of Chavadi. There were days when Sri Pratti Narayana Rao used to translate more than a chapter and hence he was able to complete the entire book by the benign grace of Sri Sai in a short span of just 40 days.
-      </p>
+      <div class="photo-story-block">
+        <figure>
+          <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu in his later days" width="220" height="220" loading="lazy" />
+          <figcaption>Shri Pratti NarayanaRao Garu later Days</figcaption>
+        </figure> 
+        <div>
+          <p style="margin-bottom: 0.75rem;">
+            During later days, it was found that Pratti Narayana Rao was in Shirdi which he made his permanent residence. Some excerpts of Sri Pratti Narayana Rao's stay at Shirdi were available from Sri Sivanesan Swamiji who had met him at Shirdi in the early 1950s.
+          </p>
+          <p style="margin-bottom: 0;">
+            For a month and a half, both used to meet at Chavadi and discuss about Sri Sai Baba for long durations.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <h2>Historical Publication and Editions</h2>
+    <!-- Section 3: Telugu Translation of Sri Sai Satcharitra -->
+    <section class="content-card timeline-section">
+      <div class="section-header-wrap">
+        <h2>Telugu Translation of Sri Sai Satcharitra</h2>
+      </div>
+
+      <div class="contribution-highlight">
+        <p style="margin-bottom: 0; font-size: 1.1rem; line-height: 1.75;">
+          It was noted by Sri Sivanesan Swamiji that Sri Pratti Narayana Rao used to translate the divine Satcharitra by sitting in the holy womb of Chavadi. There were days when Sri Pratti Narayana Rao used to translate more than a chapter and hence he was able to complete the entire book by the benign grace of Sri Sai in a short span of just 40 days.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 4: Historical Publication and Editions -->
+    <section class="content-card timeline-section">
+      <div class="section-header-wrap">
+        <h2>Historical Publication and Editions</h2>
+      </div>
+
       <p>
         After finishing the translation, Sri Pratti Narayana Rao followed the doctrine laid by Hemadpanth as "Naama Yajna" and in order to purify himself, did Sai Naama Japa for three crore times and got the Telugu version printed.
       </p>
 
-      <div class="photo-row">
+      <div class="photo-row-grid">
         <figure>
           <img src="Images/10th edition coverpage.jpg" alt="Front cover page of the 10th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
-          <figcaption><strong><em><u>10th Edition CoverPage in Telugu SaiSatcharitra</u></em></strong></figcaption>
+          <figcaption>10th Edition CoverPage in Telugu SaiSatcharitra</figcaption>
         </figure>
+
         <figure>
-          <img src="Images/10th edition preface.jpg" alt="Preface page from the 10th edition of Telugu Sri Sai Satcharitra" style="height: 520px;" loading="lazy" />
-          <figcaption><strong><em><u>10th Edition Preface in Telugu SaiSatcharitra</u></em></strong></figcaption>
+          <img src="Images/10th edition preface.jpg" alt="Preface page from the 10th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+          <figcaption>10th Edition Preface in Telugu SaiSatcharitra</figcaption>
         </figure>
+
         <figure>
-          <img src="Images/20th edition coverpage.jpg" alt="Front cover page of the 20th edition of Telugu Sri Sai Satcharitra" style="height: 520px;" loading="lazy" />
-          <figcaption><strong><em><u>20th Edition CoverPage in Telugu SaiSatcharitra</u></em></strong></figcaption>
+          <img src="Images/20th edition coverpage.jpg" alt="Front cover page of the 20th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+          <figcaption>20th Edition CoverPage in Telugu SaiSatcharitra</figcaption>
         </figure>
       </div>
 
       <p>
         Later, he personally did Parayana of the same at Kashi, Kolhapur, Kurnool, Mahurgadh, Kuruvapur, Gangapur, Humnabad, Akkalkot, Shirdi, Somanath, Srisailam, Ujjain, Mahabaleshwar, Pareli, Dhakini, Rameshwaram, Aundh, Tryambakeshwar, Ghrushneshwar (Ellora), Junagadh, Bhadrachalam, Dwaraka, Pandharpur, Vemapalli, Puri, Tirupati, Sri Rangam and Tiruvananthapuram.
       </p>
+
       <p>
         The first print of Telugu Sai Satcharitra was released on 19th May 1953. Sri Pratti Narayana Rao was also instrumental in doing Sai Prachara in Andhra Pradesh through his discourses in Telugu.
       </p>
 
-      <div class="photo-block">
+      <div class="photo-story-block">
         <figure>
           <img src="Images/Smt.Dukki SaiLeelamma garu.jpg" alt="Photograph of Smt Dukki Sai Leelamma Garu who received the first copy of the Telugu Sai Satcharitra" loading="lazy" />
-          <figcaption><strong><em><u>Smt.Dukki Sai LeelammaGaru</u></em></strong></figcaption>
+          <figcaption>Smt.Dukki Sai LeelammaGaru</figcaption>
         </figure> 
-        <p>
-          The person who received the first copy of the Telugu Sai Satcharitra translated by Sri Pratti Narayana Rao on 19th May 1953 from the hands of Sri Pratti Narayana Rao was Mrs. Dukki Sai Leelamma Garu.
-        </p> 
+        <div>
+          <p style="margin-bottom: 0;">
+            The person who received the first copy of the Telugu Sai Satcharitra translated by Sri Pratti Narayana Rao on 19th May 1953 from the hands of Sri Pratti Narayana Rao was Mrs. Dukki Sai Leelamma Garu.
+          </p> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Family Memories and Legacy -->
+    <section class="content-card timeline-section">
+      <div class="section-header-wrap">
+        <h2>Family Memories and Legacy</h2>
       </div>
 
-      <h2>Family Memories and Legacy</h2>
       <p>
         After Sri Pratti Narayana Rao attained Samadhi, his final rites were done on a grand scale (the place where he attained Samadhi is not known) by Sai devotees. His memory and immense literary legacy continue to be lovingly cherished by his family members, descendants, and millions of Sai devotees.
       </p>
-      <p>
-        For an overview of his spiritual significance and translator milestones, you can <a href="./">return to the tribute homepage</a>.
-      </p>
-      <p>
-        To view the complete gallery of family photographs, archival certificates, and different book prints, you can <a href="gallery.html">view historical photographs and family memories</a>.
-      </p>
-    </article>
+
+      <div class="explore-grid" style="margin-top: 1.5rem;">
+        <div class="explore-card">
+          <div>
+            <h3>Tribute Homepage</h3>
+            <p>Return to the main page for an overview of his life, translation work, and spiritual significance.</p>
+          </div>
+          <a href="./" class="card-link">Return to the tribute homepage &rarr;</a>
+        </div>
+
+        <div class="explore-card">
+          <div>
+            <h3>Historical Photo Gallery</h3>
+            <p>Explore the full collection of archival photographs, family invitations, and book editions.</p>
+          </div>
+          <a href="gallery.html" class="card-link">View historical photographs and family memories &rarr;</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
-    <p class="footer-credit">
-      Website created with love by Dhanunjaya Rao in memory of my great-grandfather Shri Pratti Narayana Rao Garu
-    </p>
-    <p>&copy; 2025 Tribute by Family & Devotees</p>
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-source-note">
+        <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
+      </div>
+      <p class="footer-credit">
+        Website created with love by Dhanunjaya Rao in memory of my great-grandfather Sri Pratti Narayana Rao Garu
+      </p>
+      <div class="footer-nav">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2025 Tribute by Family & Devotees. All rights reserved.
+      </p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

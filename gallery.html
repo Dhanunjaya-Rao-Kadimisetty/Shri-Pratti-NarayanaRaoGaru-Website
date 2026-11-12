@@ -33,6 +33,11 @@
   <!-- Favicon -->
   <link rel="icon" href="Images/Shri Pratti Narayana Rao logo photo.jpeg" type="image/jpeg" />
 
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TTZ0DYL4G"></script>
   <script>
@@ -113,133 +118,240 @@
 </head>
 
 <body>
-<header style="text-align: center; padding: 10px; background-color: #5B3A29;">
-  <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Shirdi SaiBaba</figcaption>
-    </figure>
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Pratti Narayana Rao Garu</figcaption>
-    </figure>
-  </div>
 
-  <h1 style="color: white; margin-top: 10px;">Photo Gallery of Sri Pratti Narayana Rao Garu</h1>
-  <nav>
-    <a href="./" style="color: white; margin: 0 10px;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 10px;">About</a>
-    <a href="gallery.html" style="color: white; margin: 0 10px;">Gallery</a>
-  </nav>
-</header>
-
-  <main>
-    <section>
-      <h2>Historical Photographs of Sri Pratti Narayana Rao Garu</h2>
-      <div class="gallery">
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu, translator of Sri Sai Satcharitra into Telugu" style="height: 400px; width: 250px;"/>
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao Garu</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Younger Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu during his younger years" loading="lazy" />
-          <figcaption><strong><em><u>Younger Shri Pratti Narayana Rao Garu</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/black&white copy.jpg" alt="Historical black and white photograph of Sri Pratti Narayana Rao Garu" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao Black&White Picture</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu in later days in Shirdi" style="width: 250px; height: 250px; border-radius: 10px;" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti NarayanaRao Garu later Days</u></em></strong></figcaption>
-        </figure>
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <div class="header-portrait-group">
+          <img class="header-portrait" src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" width="52" height="52" />
+          <img class="header-portrait" src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" width="52" height="52" />
+        </div>
+        <div class="header-title-wrap">
+          <span class="header-kicker">Archival Collection</span>
+          <h1 class="header-title">Photo Gallery of Sri Pratti Narayana Rao Garu</h1>
+        </div>
       </div>
-    </section>
 
-    <section>
-      <h2>Telugu Sai Satcharitra Book Editions</h2>
-      <div class="gallery">
-        <figure>
-          <img src="Images/10th edition coverpage.jpg" alt="Front cover page of the 10th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
-          <figcaption><strong><em><u>10th Edition CoverPage in Telugu SaiSatcharitra</u></em></strong></figcaption>
-        </figure>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
 
-        <figure>
-          <img src="Images/10th edition preface.jpg" alt="Historical preface page from the 10th edition of Telugu Sri Sai Satcharitra" style="height: 400px;" loading="lazy" />
-          <figcaption><strong><em><u>10th Edition Preface in Telugu SaiSatcharitra</u></em></strong></figcaption>
-        </figure>
+      <nav class="header-nav">
+        <a href="./" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+      </nav>
+    </div>
+  </header>
 
-        <figure>
-          <img src="Images/20th edition coverpage.jpg" alt="Front cover page of the 20th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
-          <figcaption><strong><em><u>20th Edition CoverPage in Telugu SaiSatcharitra</u></em></strong></figcaption>
-        </figure>
+  <!-- Main Content -->
+  <main class="site-main">
 
-        <figure>
-          <img src="Images/30th edition coverphoto.jpg" alt="Front cover photo of the 30th edition of Telugu Sri Sai Satcharitra" style="height: 400px; width: 250px;" loading="lazy" />
-          <figcaption><strong><em><u>30th Edition CoverPhoto in Telugu Sai Satcharitra</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Collage Photos.jpg" alt="Collage photograph of Sri Sai Satcharitra author Hemadpanth and translators" loading="lazy" />
-          <figcaption><strong><em><u>SaiSatcharitra Author&Translators</u></em></strong></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section>
-      <h2>Family Photographs and Memories</h2>
-      <div class="gallery">
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card.jpg" alt="Historical wedding invitation card of Sri Pratti Narayana Rao and Smt Kameshwaramma" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao's Eldest Daughter .jpg" alt="Photograph of Smt Chandramathi, eldest daughter of Sri Pratti Narayana Rao Garu" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao's Eldest Daughter Smt.Chandramathi</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Shri Pratti Narayana Rao's GrandDaughter and her family.jpg" alt="Photograph of Sri Pratti Narayana Rao's granddaughter Smt Annapurna and her family" style="height:330px;" loading="lazy" />
-          <figcaption><strong><em><u>Shri Pratti Narayana Rao's GrandDaughter Smt.Annapurna(Daughter of Chandramathi) and her family</u></em></strong></figcaption>
-        </figure>
-
-        <figure>
-          <img src="Images/Smt.Dukki SaiLeelamma garu.jpg" alt="Photograph of Smt Dukki Sai Leelamma Garu who received the first copy of Telugu Sai Satcharitra in 1953" loading="lazy" />
-          <figcaption><strong><em><u>Smt.Dukki Sai LeelammaGaru</u></em></strong></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section>
-      <h2>Historical Documents and Publications</h2>
-      <div class="gallery">
-        <figure>
-          <img src="Images/photo of the tutorial college where Shri Pratti Narayana Rao taught.jpg" alt="Historical photograph of the tutorial college in Vizianagaram where Sri Pratti Narayana Rao taught" loading="lazy" />
-          <figcaption><strong><em><u>photo of the tutorial college where Shri Pratti Narayana Rao taught</u></em></strong></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="biography" style="margin-top: 30px;">
-      <p>
-        To read the complete biographical background and spiritual journey behind these images, please <a href="about.html">read the life history of Sri Pratti Narayana Rao Garu</a>.
+    <!-- Gallery Introduction Card -->
+    <section class="gallery-intro-card">
+      <span class="hero-badge">Curated Archival Gallery</span>
+      <p style="font-size: 1.12rem; line-height: 1.7; margin-bottom: 0;">
+        Explore authentic historical photographs, original book covers, family memories, and archival documents commemorating Sri Pratti Narayana Rao Garu and his divine contribution to Telugu Sai literature. Click any photograph to view it in full resolution with the interactive lightbox.
       </p>
-      <p>
-        For an overview of his life, translation work, and contributions to Sai literature, <a href="./">visit the main tribute website</a>.
-      </p>
+
+      <div class="gallery-filter-bar">
+        <a href="#portraits" class="gallery-filter-btn">Historical Photographs</a>
+        <a href="#editions" class="gallery-filter-btn">Telugu Book Editions</a>
+        <a href="#family" class="gallery-filter-btn">Family Photographs</a>
+        <a href="#documents" class="gallery-filter-btn">Historical Documents</a>
+      </div>
     </section>
+
+    <!-- Category 1: Historical Photographs of Sri Pratti Narayana Rao Garu -->
+    <section class="gallery-section-card" id="portraits">
+      <div class="section-header-wrap">
+        <h2>Historical Photographs of Sri Pratti Narayana Rao Garu</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu, translator of Sri Sai Satcharitra into Telugu" width="250" height="400" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti Narayana Rao Garu</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Younger Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu during his younger years" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Younger Shri Pratti Narayana Rao Garu</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/black&white copy.jpg" alt="Historical black and white photograph of Sri Pratti Narayana Rao Garu" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti Narayana Rao Black&White Picture</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu in later days in Shirdi" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti NarayanaRao Garu later Days</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Category 2: Telugu Sai Satcharitra Book Editions -->
+    <section class="gallery-section-card" id="editions">
+      <div class="section-header-wrap">
+        <h2>Telugu Sai Satcharitra Book Editions</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/10th edition coverpage.jpg" alt="Front cover page of the 10th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>10th Edition CoverPage in Telugu SaiSatcharitra</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/10th edition preface.jpg" alt="Historical preface page from the 10th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>10th Edition Preface in Telugu SaiSatcharitra</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/20th edition coverpage.jpg" alt="Front cover page of the 20th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>20th Edition CoverPage in Telugu SaiSatcharitra</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/30th edition coverphoto.jpg" alt="Front cover photo of the 30th edition of Telugu Sri Sai Satcharitra" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>30th Edition CoverPhoto in Telugu Sai Satcharitra</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Collage Photos.jpg" alt="Collage photograph of Sri Sai Satcharitra author Hemadpanth and translators" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>SaiSatcharitra Author&Translators</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Category 3: Family Photographs and Memories -->
+    <section class="gallery-section-card" id="family">
+      <div class="section-header-wrap">
+        <h2>Family Photographs and Memories</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card.jpg" alt="Historical wedding invitation card of Sri Pratti Narayana Rao and Smt Kameshwaramma" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti Narayana Rao and Smt Kameshwaramma wedding card</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Shri Pratti Narayana Rao's Eldest Daughter .jpg" alt="Photograph of Smt Chandramathi, eldest daughter of Sri Pratti Narayana Rao Garu" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti Narayana Rao's Eldest Daughter Smt.Chandramathi</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Shri Pratti Narayana Rao's GrandDaughter and her family.jpg" alt="Photograph of Sri Pratti Narayana Rao's granddaughter Smt Annapurna and her family" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Shri Pratti Narayana Rao's GrandDaughter Smt.Annapurna(Daughter of Chandramathi) and her family</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/Smt.Dukki SaiLeelamma garu.jpg" alt="Photograph of Smt Dukki Sai Leelamma Garu who received the first copy of Telugu Sai Satcharitra in 1953" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>Smt.Dukki Sai LeelammaGaru</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Category 4: Historical Documents and Publications -->
+    <section class="gallery-section-card" id="documents">
+      <div class="section-header-wrap">
+        <h2>Historical Documents and Publications</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <div class="gallery-thumb-wrap">
+            <img src="Images/photo of the tutorial college where Shri Pratti Narayana Rao taught.jpg" alt="Historical photograph of the tutorial college in Vizianagaram where Sri Pratti Narayana Rao taught" loading="lazy" />
+            <span class="gallery-zoom-badge">&#128269;</span>
+          </div>
+          <figcaption>photo of the tutorial college where Shri Pratti Narayana Rao taught</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Cross-links navigation card -->
+    <section class="content-card">
+      <div class="explore-grid">
+        <div class="explore-card">
+          <div>
+            <h3>Biographical Timeline</h3>
+            <p>Read the comprehensive life history, family background, and spiritual milestones of Sri Pratti Narayana Rao Garu.</p>
+          </div>
+          <a href="about.html" class="card-link">Read the life history of Sri Pratti Narayana Rao Garu &rarr;</a>
+        </div>
+
+        <div class="explore-card">
+          <div>
+            <h3>Main Memorial Tribute</h3>
+            <p>Return to the main tribute page to learn about his literary contributions and enduring legacy in Sai literature.</p>
+          </div>
+          <a href="./" class="card-link">Visit the main tribute website &rarr;</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
-    <p class="footer-credit">
-      Website created with love by Dhanunjaya Rao in memory of my great-grandfather Shri Pratti Narayana Rao Garu
-    </p>
-    <p>&copy; 2025 Tribute by Family & Devotees</p>
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-source-note">
+        <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
+      </div>
+      <p class="footer-credit">
+        Website created with love by Dhanunjaya Rao in memory of my great-grandfather Sri Pratti Narayana Rao Garu
+      </p>
+      <div class="footer-nav">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2025 Tribute by Family & Devotees. All rights reserved.
+      </p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

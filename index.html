@@ -31,6 +31,11 @@
   <!-- Favicon -->
   <link rel="icon" href="Images/Shri Pratti Narayana Rao logo photo.jpeg" type="image/jpeg" />
 
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TTZ0DYL4G"></script>
   <script>
@@ -89,75 +94,180 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header style="text-align: center; padding: 10px; background-color: #5B3A29;">
-  <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Shirdi SaiBaba</figcaption>
-    </figure>
-    <figure style="text-align: center; margin: 0;">
-      <img src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <figcaption style="color: white; font-size: 14px; margin-top: 5px;">Shri Pratti Narayana Rao Garu</figcaption>
-    </figure>
-  </div>
 
-  <h1 style="color: white; margin-top: 10px;">Life and Legacy of Sri Pratti Narayana Rao Garu</h1>
-  <nav>
-    <a href="./" style="color: white; margin: 0 10px;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 10px;">About</a>
-    <a href="gallery.html" style="color: white; margin: 0 10px;">Gallery</a>
-  </nav>
-</header>
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <div class="header-portrait-group">
+          <img class="header-portrait" src="Images/Shri Shiridi SaiBaba.jpg" alt="Bhagavan Sri Shirdi Sai Baba" width="52" height="52" />
+          <img class="header-portrait" src="Images/Shri Pratti Narayana Rao logo photo.jpeg" alt="Sri Pratti Narayana Rao Garu Portrait Logo" width="52" height="52" />
+        </div>
+        <div class="header-title-wrap">
+          <span class="header-kicker">Devout Memorial Tribute</span>
+          <h1 class="header-title">Life and Legacy of Sri Pratti Narayana Rao Garu</h1>
+        </div>
+      </div>
 
-  <main>
-    <section class="intro">
-      <figure>
-        <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu, the first Telugu translator of Sri Sai Satcharitra" width="500" height="500"/>
-        <figcaption><strong><em><u>Shri Pratti Narayana Rao Garu</u></em></strong></figcaption>
-      </figure>
-      <p><strong>Welcome to the official tribute website for Sri Pratti Narayana Rao Garu, the first person to translate Sai Satcharitra into Telugu in 1953. His contributions to Sai literature and spirituality remain unparalleled.</strong></p>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+
+      <nav class="header-nav">
+        <a href="./" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-grid">
+        <figure class="hero-portrait-frame">
+          <div class="hero-portrait-inner">
+            <img src="Images/Shri Pratti Narayana Rao Garu.jpg" alt="Portrait of Sri Pratti Narayana Rao Garu, the first Telugu translator of Sri Sai Satcharitra" width="500" height="500" />
+          </div>
+          <figcaption>Sri Pratti Narayana Rao Garu</figcaption>
+        </figure>
+
+        <div class="hero-content">
+          <span class="hero-badge">First Telugu Translator of Sri Sai Satcharitra (1953)</span>
+          
+          <div class="hero-lead-quote">
+            <strong>Welcome to the official tribute website for Sri Pratti Narayana Rao Garu, the first person to translate Sai Satcharitra into Telugu in 1953. His contributions to Sai literature and spirituality remain unparalleled.</strong>
+          </div>
+
+          <p>
+            An inspiring teacher from Vizianagaram whose unconditional devotion led him to the sanctified precincts of Shirdi, where he rendered the divine leelas of Bhagavan Sri Shirdi Sai Baba into Telugu for generations of devotees.
+          </p>
+
+          <div class="btn-group">
+            <a href="about.html" class="btn btn-primary">Read Full Biography &rarr;</a>
+            <a href="gallery.html" class="btn btn-secondary">Explore Historical Gallery &rarr;</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="biography">
-      <h2>Introduction to Sri Pratti Narayana Rao Garu</h2>
+    <!-- Key Historical Highlights Strip -->
+    <div class="highlight-strip">
+      <div class="highlight-box">
+        <div class="highlight-icon">&#9670;</div>
+        <div class="highlight-title">Vizianagaram Scholar</div>
+        <p class="highlight-desc">Dedicated teacher at a modern tutorial college in Andhra Pradesh.</p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-icon">&#9670;</div>
+        <div class="highlight-title">Chavadi Residence</div>
+        <p class="highlight-desc">Lived permanently in Shirdi, associating with Sri Sivanesan Swamiji.</p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-icon">&#9670;</div>
+        <div class="highlight-title">40-Day Sacred Feat</div>
+        <p class="highlight-desc">Completed the entire Telugu translation in 40 days at Chavadi.</p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-icon">&#9670;</div>
+        <div class="highlight-title">3 Crore Naama Japa</div>
+        <p class="highlight-desc">Undertook rigorous Naama Yajna and Parayana across 26 kshetras.</p>
+      </div>
+    </div>
+
+    <!-- Editorial Sections -->
+    <section class="content-card">
+      <div class="section-header-wrap">
+        <h2>Introduction to Sri Pratti Narayana Rao Garu</h2>
+      </div>
       <p>
         Sri Pratti Narayana Rao Garu was a noble scholar, devout seeker, and revered educator from Vizianagaram, Andhra Pradesh. Dedicated to spiritual wisdom and literary excellence, he served as a respected teacher at a modern tutorial college before dedicating his life entirely to the service of Bhagavan Sri Shirdi Sai Baba. His exemplary devotion and scholarly devotion laid the foundational cornerstone for Telugu-speaking devotees to experience the life and nectar-like teachings of Sai Baba in their mother tongue.
       </p>
+    </section>
 
-      <h2>His Contribution to Telugu Sai Satcharitra</h2>
-      <p>
-        Sri Pratti Narayana Rao stands immortalized in Sai literature as the pioneer who translated the divine <em>Sri Sai Satcharitra</em> into Telugu. Originally penned in Marathi verse by Sri Govind Raghunath Dabholkar (Hemadpanth) and subsequently rendered into English by Sri Nagesh Vasudev Gunaji, the sacred work found its authentic, devotional Telugu expression through Pratti Narayana Rao's tireless efforts. His translation captured the spiritual essence, philosophical depth, and tender compassion of Sai Baba's leelas with poetic clarity and profound fidelity.
-      </p>
+    <section class="content-card">
+      <div class="section-header-wrap">
+        <h2>His Contribution to Telugu Sai Satcharitra</h2>
+      </div>
+      <div class="contribution-highlight">
+        <p style="margin-bottom: 0;">
+          Sri Pratti Narayana Rao stands immortalized in Sai literature as the pioneer who translated the divine <em>Sri Sai Satcharitra</em> into Telugu. Originally penned in Marathi verse by Sri Govind Raghunath Dabholkar (Hemadpanth) and subsequently rendered into English by Sri Nagesh Vasudev Gunaji, the sacred work found its authentic, devotional Telugu expression through Pratti Narayana Rao's tireless efforts. His translation captured the spiritual essence, philosophical depth, and tender compassion of Sai Baba's leelas with poetic clarity and profound fidelity.
+        </p>
+      </div>
+    </section>
 
-      <h2>Historical Background of the Telugu Translation</h2>
+    <section class="content-card">
+      <div class="section-header-wrap">
+        <h2>Historical Background of the Telugu Translation</h2>
+      </div>
       <p>
         During the early 1950s, Sri Pratti Narayana Rao Garu felt an intense spiritual calling that drew him to Shirdi, where he made the holy precincts his permanent home. Residing in the sanctified atmosphere of Shirdi, he formed a deep spiritual bond with Sri Sivanesan Swamiji, spending countless hours in profound contemplation at the Chavadi. It was within the sanctified womb of Chavadi that Pratti Narayana Rao sat and undertook the translation of Sri Sai Satcharitra. Inspired by divine grace, he frequently composed more than a chapter a day, completing the entire holy book in just 40 days.
       </p>
       <p>
         Prior to publishing the work, he performed three crore recitations of Sri Sai Naama Japa as a sacred <em>Naama Yajna</em> for self-purification. The historic first edition of the Telugu Sai Satcharitra was ceremoniously released on 19th May 1953. The very first copy was reverently presented to Smt. Dukki Sai Leelamma Garu, marking the dawn of a new era for Sai devotees across Andhra Pradesh.
       </p>
+    </section>
 
-      <h2>His Legacy in Sai Literature</h2>
+    <section class="content-card">
+      <div class="section-header-wrap">
+        <h2>His Legacy in Sai Literature</h2>
+      </div>
       <p>
         Following the publication, Sri Pratti Narayana Rao Garu personally undertook Parayana (devotional reading) of the Telugu Sri Sai Satcharitra across 26 sacred kshetras and pilgrimage centers throughout India, including Kashi, Shirdi, Kolhapur, Srisailam, Rameshwaram, Tirupati, and Pandharpur. Through his impassioned discourses and steadfast Sai Prachara, he helped spread the divine message of Shirdi Sai Baba far and wide. Decades later, his seminal Telugu translation remains the cherished companion of millions of devotees worldwide, preserved across successive 10th, 20th, and 30th editions.
       </p>
-
-      <h2>Explore His Biography and Historical Photographs</h2>
-      <p>
-        Discover the complete story of his family heritage, his arduous spiritual journey, and personal memories preserved by his descendants. To delve deeper into his inspiring life history, please <a href="about.html">read the biography of Sri Pratti Narayana Rao Garu</a>.
-      </p>
-      <p>
-        To view rare historical photographs of Sri Pratti Narayana Rao Garu, authentic archival documents, wedding invitations, and covers of different editions, please <a href="gallery.html">explore historical photographs and Telugu Sai Satcharitra editions</a>.
-      </p>
     </section>
+
+    <!-- Explore More Section -->
+    <section class="content-card">
+      <div class="section-header-wrap">
+        <h2>Explore His Biography and Historical Photographs</h2>
+      </div>
+      <div class="explore-grid">
+        <div class="explore-card">
+          <div>
+            <h3>Life History & Family Lineage</h3>
+            <p>
+              Discover his ancestral roots in Vizianagaram, early teaching years, renunciation, sacred days in Shirdi Chavadi, and personal memories preserved by his descendants.
+            </p>
+          </div>
+          <a href="about.html" class="card-link">Read the biography of Sri Pratti Narayana Rao Garu &rarr;</a>
+        </div>
+
+        <div class="explore-card">
+          <div>
+            <h3>Archival Photos & Book Editions</h3>
+            <p>
+              Examine rare photographic records, 10th, 20th, and 30th edition book covers, original wedding invitations, and historical family portraits across the decades.
+            </p>
+          </div>
+          <a href="gallery.html" class="card-link">Explore historical photographs and Telugu Sai Satcharitra editions &rarr;</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
-    <p class="footer-credit">
-      Website created with love by Dhanunjaya Rao in memory of my great-grandfather Shri Pratti Narayana Rao Garu
-    </p>
-    <p>&copy; 2025 Tribute by Family & Devotees</p>
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-source-note">
+        <h3>(Source: Telugu Sai Satcharitra Preface and Pratti.NarayanaRao's GrandDaughter Smt.Annapurna)</h3>
+      </div>
+      <p class="footer-credit">
+        Website created with love by Dhanunjaya Rao in memory of my great-grandfather Sri Pratti Narayana Rao Garu
+      </p>
+      <div class="footer-nav">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2025 Tribute by Family & Devotees. All rights reserved.
+      </p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
